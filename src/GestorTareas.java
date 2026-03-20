@@ -17,4 +17,8 @@ public class GestorTareas {
             System.out.println(tarea);
         }
     }
+
+    public void completarTarea(int id) {
+        this.tareas.get(id).setCompletada(true);
+    }
 }
