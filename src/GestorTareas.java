@@ -8,5 +8,9 @@ public class GestorTareas {
             this.tareas = new ArrayList<Tarea>();
         }
 
+    public void agregarTarea(String descripcion) {
+        tareas.add(new Tarea(tareas.size(), descripcion));
+    }
+
 
 }
