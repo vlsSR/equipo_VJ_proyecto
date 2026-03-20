@@ -19,6 +19,12 @@ public class GestorTareas {
     }
 
     public void completarTarea(int id) {
-        this.tareas.get(id).setCompletada(true);
+        for(Tarea tarea : tareas) {
+            if(id==tarea.getId()) {
+                tarea.setCompletada(true);
+                return;
+            }
+        }
+        System.out.println("Tarea no encontrada");
     }
 }
