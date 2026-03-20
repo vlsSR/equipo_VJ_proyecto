@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -11,8 +10,25 @@ public class Main {
         do {
             System.out.println("Elige una opcion");
             System.out.println("1. listar tareas");
-            System.out.println("2. completar una tarea");
+            System.out.println("2. añadir tarea");
+            System.out.println("3. completar una tarea");
+            int opcion = leerInt("Introduce el numero");
+            switch (opcion) {
+                case 1:
+                    gestorTareas.imprimirTareas();
+                    break;
+                case 2:
+                    String descripcion = leerString("Introduce la descripcion de la tarea");
+                    gestorTareas.agregarTarea(descripcion);
+                    break;
+                case 3:
+                    break;
+                default:
+                    System.out.println("Opcion incorrecta");
+            }
+            System.out.println();
         } while (true);
+
 
     }
 
