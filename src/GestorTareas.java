@@ -12,9 +12,11 @@ public class GestorTareas {
         tareas.add(new Tarea(tareas.size(), descripcion));
     }
 
-    public void imprimirTareas(ArrayList<Tarea> tareas) {
+    public void imprimirTareas() {
         for(Tarea tarea : tareas) {
             System.out.println(tarea);
         }
     }
+
+
 }
