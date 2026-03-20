@@ -22,6 +22,7 @@ public class Main {
                     gestorTareas.agregarTarea(descripcion);
                     break;
                 case 3:
+                    int id = leerInt("Introduce el id");
                     break;
                 default:
                     System.out.println("Opcion incorrecta");
